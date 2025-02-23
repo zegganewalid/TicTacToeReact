@@ -1,17 +1,16 @@
 {
   "files": {
-    "main.css": "/TicTacToeReact/static/css/main.617a4580.css",
-    "main.js": "/TicTacToeReact/static/js/main.0feba16b.js",
-    "static/js/453.1d9a75e6.chunk.js": "/TicTacToeReact/static/js/453.1d9a75e6.chunk.js",
-    "static/media/game-music.mp3": "/TicTacToeReact/static/media/game-music.f761678a282d0d972d44.mp3",
-    "static/media/logo.svg": "/TicTacToeReact/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
-    "index.html": "/TicTacToeReact/index.html",
-    "main.617a4580.css.map": "/TicTacToeReact/static/css/main.617a4580.css.map",
-    "main.0feba16b.js.map": "/TicTacToeReact/static/js/main.0feba16b.js.map",
-    "453.1d9a75e6.chunk.js.map": "/TicTacToeReact/static/js/453.1d9a75e6.chunk.js.map"
+    "main.css": "/zegganewalid/TicTacToeReact/static/css/main.a01990ff.css",
+    "main.js": "/zegganewalid/TicTacToeReact/static/js/main.70b0912c.js",
+    "static/js/453.1d9a75e6.chunk.js": "/zegganewalid/TicTacToeReact/static/js/453.1d9a75e6.chunk.js",
+    "static/media/game-music.mp3": "/zegganewalid/TicTacToeReact/static/media/game-music.f761678a282d0d972d44.mp3",
+    "index.html": "/zegganewalid/TicTacToeReact/index.html",
+    "main.a01990ff.css.map": "/zegganewalid/TicTacToeReact/static/css/main.a01990ff.css.map",
+    "main.70b0912c.js.map": "/zegganewalid/TicTacToeReact/static/js/main.70b0912c.js.map",
+    "453.1d9a75e6.chunk.js.map": "/zegganewalid/TicTacToeReact/static/js/453.1d9a75e6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.617a4580.css",
-    "static/js/main.0feba16b.js"
+    "static/css/main.a01990ff.css",
+    "static/js/main.70b0912c.js"
   ]
 }
