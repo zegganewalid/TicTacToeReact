@@ -1,70 +1,118 @@
-# Getting Started with Create React App
+# Tic Tac Toe avec Animations en React
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Bienvenue dans le projet **Tic Tac Toe avec Animation en React** ! Ce projet vous permet de jouer au célèbre jeu Tic Tac Toe avec des animations élégantes et des effets interactifs. Il utilise React pour gérer l'état et les interactions, et des animations CSS pour rendre le jeu plus dynamique et amusant.
 
-## Available Scripts
+![tictactoee](https://github.com/user-attachments/assets/4f0f8717-2a84-49c0-afd6-e148ddd1b419)
 
-In the project directory, you can run:
+## Fonctionnalités
 
-### `npm start`
+- **Gameplay classique de Tic Tac Toe** avec des cases interactives.
+- **Animations** pour chaque mouvement, ainsi qu'une animation de victoire pour les joueurs.
+- **Confettis** pour célébrer la victoire d'un joueur.
+- **Gestion du score** pour suivre les victoires de chaque joueur.
+- **Musique de fond** pour une ambiance immersive, avec la possibilité de l'activer/désactiver.
+- **Responsive** : l'interface s'adapte à différentes tailles d'écran.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Prérequis
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Avant de commencer, vous devez avoir les outils suivants installés sur votre machine :
 
-### `npm test`
+- [Node.js](https://nodejs.org) (version 14 ou supérieure)
+- [npm](https://www.npmjs.com/) ou [yarn](https://yarnpkg.com/) (gestionnaire de paquets)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Installation
 
-### `npm run build`
+1. Clonez ce repository sur votre machine locale :
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+   ```bash
+   git clone https://github.com/votre-utilisateur/tic-tac-toe-react.git
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. Allez dans le répertoire du projet :
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+   ```bash
+   cd tic-tac-toe-react
+   ```
 
-### `npm run eject`
+3. Installez les dépendances nécessaires :
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+   Avec **npm** :
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+   ```bash
+   npm install
+   ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+   Ou avec **yarn** :
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+   ```bash
+   yarn install
+   ```
 
-## Learn More
+## Lancer l'application
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Une fois les dépendances installées, lancez le serveur de développement avec la commande suivante :
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+npm start
+```
 
-### Code Splitting
+Ou avec **yarn** :
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```bash
+yarn start
+```
 
-### Analyzing the Bundle Size
+Cela ouvrira l'application dans votre navigateur à l'adresse suivante : `http://localhost:3000`.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Fonctionnement du Jeu
 
-### Making a Progressive Web App
+- Le jeu commence avec une grille vide de 3x3.
+- Le joueur 1 utilise le symbole **"X"** et le joueur 2 utilise le symbole **"O"**.
+- Chaque joueur clique sur une case vide pour faire son mouvement.
+- Une animation se déclenche à chaque tour.
+- Lorsqu'un joueur gagne, une animation de victoire apparaît, ainsi qu'un effet de confettis.
+- En cas de match nul, un message l'indique.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Composants et Logique du Jeu
 
-### Advanced Configuration
+Le jeu est géré via un seul composant principal `TicTacToe`. Il gère :
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- L'état des cases du jeu (`data`).
+- Le nombre de tours joués (`count`).
+- Les scores des joueurs (`scoreX` et `scoreO`).
+- Les animations CSS pour les mouvements et la victoire.
+- La musique de fond et son activation via un bouton.
 
-### Deployment
+## Style et Animations
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Les animations sont réalisées avec des animations CSS, comme :
 
-### `npm run build` fails to minify
+- **Pop-in** : lorsque le symbole est placé dans une case.
+- **Winner-dance** : animation pour le symbole gagnant.
+- **Confettis** : un effet de confettis pour célébrer la victoire.
+- **Gagnant** : une ligne d'animation qui se forme pour signaler la victoire (horizontal, vertical, ou diagonale).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Capture d'écran
+
+Voici une capture d'écran du jeu en action :
+
+![Capture d'écran du jeu Tic Tac Toe](./screenshot.png)
+
+## Contribution
+
+Si vous souhaitez contribuer au projet :
+
+1. Forkez ce repository.
+2. Créez une branche pour votre fonctionnalité (`git checkout -b ma-nouvelle-fonctionnalité`).
+3. Faites vos modifications et ajoutez vos changements (`git commit -am 'Ajout d\'une nouvelle fonctionnalité'`).
+4. Poussez sur votre branche (`git push origin ma-nouvelle-fonctionnalité`).
+5. Ouvrez une pull request sur ce repository.
+
+## Technologies utilisées
+
+- **React** : pour gérer l'interface et les composants.
+- **CSS** : pour les styles et les animations.
+- **React Hooks** : pour la gestion de l'état (notamment `useState` et `useEffect`).
+- **Audio** : pour la gestion de la musique de fond.
+
+---
