@@ -92,12 +92,6 @@ Les animations sont réalisées avec des animations CSS, comme :
 - **Confettis** : un effet de confettis pour célébrer la victoire.
 - **Gagnant** : une ligne d'animation qui se forme pour signaler la victoire (horizontal, vertical, ou diagonale).
 
-## Capture d'écran
-
-Voici une capture d'écran du jeu en action :
-
-![Capture d'écran du jeu Tic Tac Toe](./screenshot.png)
-
 ## Contribution
 
 Si vous souhaitez contribuer au projet :
