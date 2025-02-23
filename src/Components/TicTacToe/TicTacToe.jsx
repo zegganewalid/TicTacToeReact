@@ -87,7 +87,7 @@ const TicTacToe = () => {
             }
         }
 
-        // Vérifier match nul
+
         if (!data.includes("") && !lock) {
             titleRef.current.innerHTML = "Match Nul!";
             setLock(true);
@@ -96,7 +96,7 @@ const TicTacToe = () => {
 
     const won = (winner) => {
         setLock(true);
-        setShowConfetti(true); // Activer l'animation des confettis
+        setShowConfetti(true);
         if (winner === "X") {
             titleRef.current.innerHTML = `Victoire! <img src=${cross_icon} class="winner-animation" />`;
             setScoreX(scoreX + 1);
@@ -141,7 +141,7 @@ const TicTacToe = () => {
 
     return (
         <div className="container">
-            {showConfetti && createConfetti()} {/* Afficher les confettis si showConfetti est true */}
+            {showConfetti && createConfetti()} {}
             <h1 className="title" ref={titleRef}>
                 Tic Tac Toe Game
             </h1>
