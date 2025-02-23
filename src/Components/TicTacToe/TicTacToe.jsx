@@ -96,7 +96,7 @@ const TicTacToe = () => {
 
     const won = (winner) => {
         setLock(true);
-        setShowConfetti(true);
+        setShowConfetti(true); // Activer l'animation des confettis
         if (winner === "X") {
             titleRef.current.innerHTML = `Victoire! <img src=${cross_icon} class="winner-animation" />`;
             setScoreX(scoreX + 1);
@@ -121,14 +121,17 @@ const TicTacToe = () => {
     const createConfetti = () => {
         return (
             <div className="confetti-container">
-                {[...Array(50)].map((_, i) => (
+                {[...Array(100)].map((_, i) => (
                     <div 
                         key={i} 
                         className="confetti"
                         style={{
                             left: `${Math.random() * 100}%`,
-                            animationDelay: `${Math.random() * 3}s`,
-                            backgroundColor: `hsl(${Math.random() * 360}, 70%, 50%)`
+                            animationDelay: `${Math.random() * 2}s`,
+                            backgroundColor: `hsl(${Math.random() * 360}, 70%, 50%)`,
+                            width: `${Math.random() * 8 + 4}px`,
+                            height: `${Math.random() * 8 + 4}px`,
+                            borderRadius: Math.random() > 0.5 ? '50%' : '0'
                         }}
                     />
                 ))}
@@ -138,7 +141,7 @@ const TicTacToe = () => {
 
     return (
         <div className="container">
-            {showConfetti && createConfetti()}
+            {showConfetti && createConfetti()} {/* Afficher les confettis si showConfetti est true */}
             <h1 className="title" ref={titleRef}>
                 Tic Tac Toe Game
             </h1>
