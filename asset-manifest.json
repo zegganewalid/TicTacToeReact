@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/zegganewalid/TicTacToeReact/static/css/main.617a4580.css",
+    "main.js": "/zegganewalid/TicTacToeReact/static/js/main.066ece3a.js",
+    "static/js/453.1d9a75e6.chunk.js": "/zegganewalid/TicTacToeReact/static/js/453.1d9a75e6.chunk.js",
+    "static/media/game-music.mp3": "/zegganewalid/TicTacToeReact/static/media/game-music.f761678a282d0d972d44.mp3",
+    "index.html": "/zegganewalid/TicTacToeReact/index.html",
+    "main.617a4580.css.map": "/zegganewalid/TicTacToeReact/static/css/main.617a4580.css.map",
+    "main.066ece3a.js.map": "/zegganewalid/TicTacToeReact/static/js/main.066ece3a.js.map",
+    "453.1d9a75e6.chunk.js.map": "/zegganewalid/TicTacToeReact/static/js/453.1d9a75e6.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.617a4580.css",
+    "static/js/main.066ece3a.js"
+  ]
+}
